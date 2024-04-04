@@ -74,7 +74,7 @@ struct MainTabView: View {
             }
         }
         .onAppear {
-            loadProjectData()
+//            loadProjectData()
         }
     }
     
