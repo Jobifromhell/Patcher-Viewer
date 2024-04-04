@@ -1,0 +1,463 @@
+{
+  "projectName" : "DEMO",
+  "audioPatches" : [
+    {
+      "source" : "BD IN",
+      "group" : "A",
+      "location" : "STAGE",
+      "stand" : "GROUND",
+      "id" : "F8CEB6E1-D238-49AD-9CCA-8558B6C07F4B",
+      "phantom" : true,
+      "patchNumber" : 1,
+      "micDI" : "B91"
+    },
+    {
+      "id" : "8A4E03DF-5DEE-45B1-8EC2-7B3EC4EA2091",
+      "stand" : "SMALL",
+      "phantom" : false,
+      "group" : "A",
+      "source" : "BD OUT",
+      "location" : "STAGE",
+      "patchNumber" : 2,
+      "micDI" : "B52"
+    },
+    {
+      "location" : "STAGE",
+      "group" : "A",
+      "source" : "SN TOP",
+      "id" : "BB74E361-066D-473C-9608-EBF3A733CF6A",
+      "phantom" : false,
+      "micDI" : "B57",
+      "stand" : "SMALL",
+      "patchNumber" : 3
+    },
+    {
+      "patchNumber" : 4,
+      "micDI" : "SM57",
+      "location" : "STAGE",
+      "source" : "SN BOT",
+      "group" : "A",
+      "stand" : "SMALL",
+      "phantom" : false,
+      "id" : "D8B8BD06-B641-4ACC-A4CC-D911D012C46B"
+    },
+    {
+      "stand" : "SMALL",
+      "patchNumber" : 5,
+      "micDI" : "SM57",
+      "phantom" : false,
+      "group" : "A",
+      "location" : "STAGE",
+      "id" : "359A3E48-1318-4881-B77A-C29F331E570F",
+      "source" : "SN 2"
+    },
+    {
+      "source" : "HI HAT",
+      "stand" : "SMALL",
+      "patchNumber" : 6,
+      "location" : "STAGE",
+      "micDI" : "SM81",
+      "phantom" : true,
+      "group" : "A",
+      "id" : "F7D52F44-54C4-478A-B910-95003CCADEA5"
+    },
+    {
+      "group" : "A",
+      "micDI" : "E604",
+      "stand" : "CLAMP",
+      "id" : "D52C2E08-D2B5-4FE6-B2AD-41BC38BA2064",
+      "location" : "STAGE",
+      "phantom" : false,
+      "patchNumber" : 7,
+      "source" : "RACK TOM 1"
+    },
+    {
+      "stand" : "CLAMP",
+      "source" : "FLOOR TOM 1",
+      "id" : "FC338BB3-0FD0-4611-B436-40F7FE311504",
+      "location" : "STAGE",
+      "micDI" : "E604",
+      "phantom" : false,
+      "patchNumber" : 8,
+      "group" : "A"
+    },
+    {
+      "stand" : "CLAMP",
+      "id" : "3108332E-5FD9-443D-90BA-214909F82CE4",
+      "patchNumber" : 9,
+      "location" : "STAGE",
+      "phantom" : false,
+      "source" : "FLOOR TOM 2",
+      "group" : "A",
+      "micDI" : "E604"
+    },
+    {
+      "stand" : "SMALL",
+      "patchNumber" : 10,
+      "source" : "RIDE",
+      "micDI" : "SM81",
+      "location" : "STAGE",
+      "id" : "D549DC33-F599-4FBA-99AA-94AA5DAE4CC9",
+      "group" : "A",
+      "phantom" : true
+    },
+    {
+      "micDI" : "C414",
+      "location" : "STAGE",
+      "source" : "OH L",
+      "group" : "A",
+      "stand" : "TALL",
+      "phantom" : true,
+      "id" : "9F1F0373-FF6E-4C5F-B184-810D07604E9A",
+      "patchNumber" : 11
+    },
+    {
+      "stand" : "TALL",
+      "id" : "5DA7BA9F-B05E-46C0-B1EB-4C0DFDE2F2D2",
+      "location" : "STAGE",
+      "micDI" : "C414",
+      "source" : "OH R",
+      "phantom" : true,
+      "patchNumber" : 12,
+      "group" : "A"
+    },
+    {
+      "phantom" : true,
+      "group" : "A",
+      "location" : "STAGE",
+      "id" : "0CC25C90-AA26-475F-95B1-FF259A6126A8",
+      "source" : "SPDS L",
+      "patchNumber" : 13,
+      "micDI" : "DI",
+      "stand" : "GROUND"
+    },
+    {
+      "micDI" : "DI",
+      "id" : "0595603A-C5F8-4E52-ABBB-46947FBE8C0D",
+      "group" : "A",
+      "stand" : "GROUND",
+      "location" : "STAGE",
+      "patchNumber" : 14,
+      "source" : "SPDS R",
+      "phantom" : true
+    },
+    {
+      "group" : "B",
+      "stand" : "GROUND",
+      "phantom" : true,
+      "source" : "BASS DI",
+      "id" : "F4A66E5B-A3A6-495A-8672-B36FDB0058BD",
+      "patchNumber" : 15,
+      "micDI" : "DI",
+      "location" : "STAGE"
+    },
+    {
+      "source" : "BASS MIC",
+      "patchNumber" : 16,
+      "location" : "STAGE",
+      "group" : "B",
+      "phantom" : false,
+      "micDI" : "M88",
+      "id" : "CA216C6F-AAD9-497D-89E6-2C87ECA05261",
+      "stand" : "SMALL"
+    },
+    {
+      "location" : "STAGE",
+      "group" : "C",
+      "id" : "11F90099-3649-42D1-B4E2-BD4D8B32CF39",
+      "phantom" : false,
+      "source" : "GTR AMP A",
+      "micDI" : "SM57",
+      "stand" : "SMALL",
+      "patchNumber" : 17
+    },
+    {
+      "patchNumber" : 18,
+      "id" : "1E53DBEA-CFDF-499E-B716-998E20FB9E46",
+      "location" : "STAGE",
+      "micDI" : "MD421",
+      "phantom" : false,
+      "source" : "GTR AMP A",
+      "group" : "C",
+      "stand" : "SMALL"
+    },
+    {
+      "phantom" : false,
+      "stand" : "SMALL",
+      "patchNumber" : 19,
+      "id" : "8A62CF73-20B8-49B9-B609-BDD186FC8338",
+      "group" : "D",
+      "location" : "STAGE",
+      "micDI" : "SM57",
+      "source" : "GTR AMP B"
+    },
+    {
+      "source" : "GTR AMP B",
+      "stand" : "SMALL",
+      "id" : "CEEBD9B5-E0D3-42C2-AC80-6A05BA564A19",
+      "micDI" : "MD421",
+      "phantom" : false,
+      "location" : "STAGE",
+      "group" : "D",
+      "patchNumber" : 20
+    },
+    {
+      "stand" : "GROUND",
+      "micDI" : "DI",
+      "patchNumber" : 21,
+      "location" : "STAGE",
+      "group" : "E",
+      "source" : "GTR DI 1",
+      "id" : "09669728-E5D1-4857-B0E7-F157D43A4ED3",
+      "phantom" : true
+    },
+    {
+      "location" : "STAGE",
+      "group" : "G",
+      "micDI" : "DI",
+      "source" : "KEY 1 LEFT",
+      "stand" : "GROUND",
+      "phantom" : true,
+      "id" : "E41604FE-68B1-4029-8B59-87205D717BB0",
+      "patchNumber" : 22
+    },
+    {
+      "stand" : "GROUND",
+      "patchNumber" : 23,
+      "micDI" : "DI",
+      "source" : "KEY 1 RIGHT",
+      "phantom" : true,
+      "location" : "STAGE",
+      "id" : "24334F91-309D-4B46-BB89-13834F8713EE",
+      "group" : "G"
+    },
+    {
+      "location" : "STAGE",
+      "phantom" : true,
+      "stand" : "GROUND",
+      "group" : "G",
+      "source" : "KEY 2 LEFT",
+      "id" : "94F3487A-9188-4251-A714-AB71D21E1E90",
+      "patchNumber" : 24,
+      "micDI" : "DI"
+    },
+    {
+      "stand" : "GROUND",
+      "location" : "STAGE",
+      "id" : "E51B32A2-BEFA-4AA9-8EE0-FF50AE6683DB",
+      "micDI" : "DI",
+      "group" : "G",
+      "patchNumber" : 25,
+      "phantom" : true,
+      "source" : "KEY 2 RIGHT"
+    },
+    {
+      "phantom" : true,
+      "id" : "84E1DCD4-7C8F-4158-8F6B-7B4C2DED9FB1",
+      "location" : "STAGE",
+      "group" : "K",
+      "stand" : "GROUND",
+      "source" : "DJ LEFT",
+      "patchNumber" : 26,
+      "micDI" : "DI"
+    },
+    {
+      "phantom" : true,
+      "group" : "K",
+      "id" : "83492983-9CEF-40AC-BCD3-190E644B2956",
+      "source" : "DJ LEFT",
+      "stand" : "GROUND",
+      "location" : "STAGE",
+      "patchNumber" : 27,
+      "micDI" : "DI"
+    },
+    {
+      "source" : "DJ BOOTH",
+      "group" : "K",
+      "phantom" : true,
+      "patchNumber" : 28,
+      "stand" : "GROUND",
+      "id" : "9DE33F61-A35E-44A7-8A18-A180A59A5F1D",
+      "micDI" : "DI",
+      "location" : "STAGE"
+    },
+    {
+      "id" : "8FF0D648-8B19-431D-953C-7F9551DAE7D5",
+      "group" : "H",
+      "phantom" : false,
+      "micDI" : "SM58",
+      "stand" : "ROUND BASE",
+      "location" : "STAGE",
+      "source" : "LEAD VOCAL",
+      "patchNumber" : 29
+    },
+    {
+      "patchNumber" : 30,
+      "group" : "I",
+      "phantom" : false,
+      "micDI" : "SM58",
+      "source" : "BACKING VOCAL 1",
+      "id" : "AFF19D3D-F090-47F9-820F-949A7282E305",
+      "stand" : "TALL",
+      "location" : "STAGE"
+    },
+    {
+      "phantom" : false,
+      "micDI" : "SM58",
+      "location" : "STAGE",
+      "id" : "B8A3FE52-35D8-412E-B6BA-D071CCF53D99",
+      "stand" : "TALL",
+      "group" : "I",
+      "patchNumber" : 31,
+      "source" : "BACKING VOCAL 2"
+    },
+    {
+      "location" : "STAGE",
+      "group" : "J",
+      "stand" : "TALL",
+      "micDI" : "MD421",
+      "source" : "Sax Tenor",
+      "id" : "7410864E-DC8F-495C-A414-3F44292CE3F6",
+      "phantom" : false,
+      "patchNumber" : 32
+    }
+  ],
+  "id" : "7307B51E-8C92-4523-90A4-6DC755562341",
+  "outputPatches" : [
+    {
+      "location" : "",
+      "destination" : "DRUM",
+      "busType" : "AUX",
+      "isFirstInStereoPair" : true,
+      "patchNumber" : 1,
+      "monitorType" : "WEDGE",
+      "id" : "478A980A-ACF2-4566-8041-8A95B4010299",
+      "isStereo" : false
+    },
+    {
+      "isFirstInStereoPair" : true,
+      "id" : "97378033-27F5-4303-B634-731F2F4241C8",
+      "destination" : "BASS",
+      "monitorType" : "WEDGE",
+      "busType" : "AUX",
+      "isStereo" : false,
+      "location" : "",
+      "patchNumber" : 2
+    },
+    {
+      "destination" : "GTR A",
+      "monitorType" : "WEDGE",
+      "patchNumber" : 3,
+      "busType" : "AUX",
+      "isStereo" : false,
+      "id" : "F0F9AE35-1EC9-4C1F-B3B4-BB0F2274701A",
+      "isFirstInStereoPair" : true,
+      "location" : ""
+    },
+    {
+      "destination" : "GTR B",
+      "isStereo" : false,
+      "location" : "",
+      "patchNumber" : 4,
+      "monitorType" : "WEDGE",
+      "id" : "F263116B-DEA4-4E8B-8C6B-C79F9609EFE5",
+      "busType" : "AUX",
+      "isFirstInStereoPair" : true
+    },
+    {
+      "destination" : "LEAD",
+      "isStereo" : false,
+      "id" : "8C94FB17-130B-4E94-A6F4-0E53BEC95510",
+      "monitorType" : "IEM",
+      "patchNumber" : 5,
+      "busType" : "AUX",
+      "location" : "",
+      "isFirstInStereoPair" : true
+    },
+    {
+      "isStereo" : false,
+      "location" : "",
+      "patchNumber" : 6,
+      "monitorType" : "IEM",
+      "busType" : "AUX",
+      "destination" : "BV 1",
+      "isFirstInStereoPair" : true,
+      "id" : "BB1F150B-0724-4C17-9F22-903B6823B72B"
+    },
+    {
+      "patchNumber" : 7,
+      "location" : "",
+      "monitorType" : "IEM",
+      "busType" : "AUX",
+      "isStereo" : false,
+      "isFirstInStereoPair" : true,
+      "id" : "51B5BB4C-5C71-47CC-88DB-C6A6329410BE",
+      "destination" : "BV 2"
+    },
+    {
+      "location" : "",
+      "busType" : "AUX",
+      "destination" : "FRONT STAGE",
+      "id" : "76000268-F103-40C5-A06D-6DAC5BA3E0FA",
+      "isStereo" : false,
+      "monitorType" : "FULL RANGE",
+      "patchNumber" : 8,
+      "isFirstInStereoPair" : true
+    },
+    {
+      "location" : "",
+      "id" : "91D78503-E392-4399-9D5F-AC55C4D87F38",
+      "isFirstInStereoPair" : true,
+      "busType" : "AUX",
+      "monitorType" : "IEM",
+      "patchNumber" : 9,
+      "destination" : "BACKLINER",
+      "isStereo" : false
+    },
+    {
+      "id" : "380FC886-FAC9-4CE5-AAC1-278DA1BEBF6E",
+      "location" : "",
+      "destination" : "MON TECH",
+      "patchNumber" : 10,
+      "monitorType" : "IEM",
+      "isFirstInStereoPair" : true,
+      "busType" : "CUE",
+      "isStereo" : false
+    },
+    {
+      "id" : "7C02A69E-17DD-4A54-B6C5-65A0FBDA029F",
+      "isFirstInStereoPair" : true,
+      "monitorType" : "WEDGE",
+      "location" : "",
+      "patchNumber" : 11,
+      "isStereo" : false,
+      "destination" : "MON TECH",
+      "busType" : "CUE"
+    }
+  ],
+  "creationDate" : 731977555.054563,
+  "stageElements" : [
+    {
+      "positionYPercent" : 0.5,
+      "id" : "F99221CB-BACA-4D49-88B0-4BD22D730D1A",
+      "zIndex" : 0,
+      "patch" : "",
+      "name" : "Musician",
+      "rotation" : 0,
+      "type" : "Musician",
+      "positionXPercent" : 0.5,
+      "isSelected" : false
+    },
+    {
+      "zIndex" : 0,
+      "positionXPercent" : 0.22230113636363635,
+      "name" : "Riser 3x2",
+      "rotation" : 0,
+      "type" : "Riser 3x2",
+      "id" : "12173B41-BAC5-4A5D-8A91-DE9E34E05942",
+      "patch" : "",
+      "positionYPercent" : 0.5071816510695187,
+      "isSelected" : false
+    }
+  ]
+}
