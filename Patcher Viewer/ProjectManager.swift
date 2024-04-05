@@ -45,7 +45,6 @@ struct ProjectManagerView: View {
                 isImporting = true
             }
             .font(.largeTitle)
-            .contrast(10)
             .padding(50)
             .fileImporter(
                 isPresented: $isImporting,
