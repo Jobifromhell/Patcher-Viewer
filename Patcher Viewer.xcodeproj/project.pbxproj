@@ -20,7 +20,6 @@
 		C9015FC22BBA1CA300AC2A11 /* OutputPatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9015FC12BBA1CA300AC2A11 /* OutputPatchView.swift */; };
 		C9015FC42BBA1CAE00AC2A11 /* StagePlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9015FC32BBA1CAE00AC2A11 /* StagePlotView.swift */; };
 		C9015FC62BBA1CEF00AC2A11 /* ProjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9015FC52BBA1CEF00AC2A11 /* ProjectManager.swift */; };
-		C9281AA92BBF53F000339742 /* projectData.json in Resources */ = {isa = PBXBuildFile; fileRef = C9281AA82BBF53F000339742 /* projectData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,6 @@
 		C9015FC12BBA1CA300AC2A11 /* OutputPatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputPatchView.swift; sourceTree = "<group>"; };
 		C9015FC32BBA1CAE00AC2A11 /* StagePlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StagePlotView.swift; sourceTree = "<group>"; };
 		C9015FC52BBA1CEF00AC2A11 /* ProjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectManager.swift; sourceTree = "<group>"; };
-		C9281AA82BBF53F000339742 /* projectData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = projectData.json; path = ../../../../../../Desktop/projectData.json; sourceTree = "<group>"; };
 		C98E22DE2BBA2C1400C55E52 /* Patcher-Viewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Patcher-Viewer-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 				C98E22DE2BBA2C1400C55E52 /* Patcher-Viewer-Info.plist */,
 				C9015F8E2BBA070000AC2A11 /* Patcher_ViewerApp.swift */,
 				C9015F902BBA070000AC2A11 /* ContentView.swift */,
-				C9281AA82BBF53F000339742 /* projectData.json */,
 				C9015FC52BBA1CEF00AC2A11 /* ProjectManager.swift */,
 				C9015FBF2BBA1C9600AC2A11 /* InputPatchView.swift */,
 				C9015FC12BBA1CA300AC2A11 /* OutputPatchView.swift */,
@@ -254,7 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9281AA92BBF53F000339742 /* projectData.json in Resources */,
 				C9015F962BBA070100AC2A11 /* Preview Assets.xcassets in Resources */,
 				C9015F932BBA070100AC2A11 /* Assets.xcassets in Resources */,
 			);
@@ -459,16 +455,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Patcher\\ Viewer/Preview\\ Content Patcher\\ Viewer/projectData.json";
+				DEVELOPMENT_ASSET_PATHS = "Patcher\\ Viewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Patcher-Viewer-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Patcher Viewer";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "";
-				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "$(PRODUCT_NAME) requires access to the Documents folder to open projects.";
-				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "";
+				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "Patcher Viewer requires access to the Desktop folder to open projects.";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Patcher Viewer requires access to the Documents folder to open projects.";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "Patcher Viewer requires access to the Download folder to open projects.";
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -504,16 +500,16 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "Patcher\\ Viewer/Preview\\ Content Patcher\\ Viewer/projectData.json";
+				DEVELOPMENT_ASSET_PATHS = "Patcher\\ Viewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = 4B43GPHYV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Patcher-Viewer-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Patcher Viewer";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "";
-				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "$(PRODUCT_NAME) requires access to the Documents folder to open projects.";
-				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "";
+				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "Patcher Viewer requires access to the Desktop folder to open projects.";
+				INFOPLIST_KEY_NSDocumentsFolderUsageDescription = "Patcher Viewer requires access to the Documents folder to open projects.";
+				INFOPLIST_KEY_NSDownloadsFolderUsageDescription = "Patcher Viewer requires access to the Download folder to open projects.";
 				INFOPLIST_KEY_NSFileProviderDomainUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

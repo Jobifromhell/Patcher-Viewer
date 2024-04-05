@@ -59,13 +59,17 @@ struct OutputPatchView: View {
                     set: { self.project?.outputPatches[index].annotation = $0 }
                 )
                 
-                PatchAnnotationView(annotation: annotationBinding, onClose: {
-                    self.isShowingDetails = false
-                })
+//                PatchAnnotationView(annotation: annotationBinding, onClose: {
+//                    self.isShowingDetails = false
+//                })
             }
         }
     }
-
+    private func saveAnnotations() {
+        if let encoded = try? JSONEncoder().encode(project) {
+            UserDefaults.standard.set(encoded, forKey: "SavedProject")
+        }
+    }
     var headerView: some View {
         HStack {
             Text("#").frame(width: 25, alignment: .leading)
