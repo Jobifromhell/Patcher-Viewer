@@ -78,9 +78,7 @@ struct MainTabView: View {
         }
     }
     
-    func loadProjectData() {
-        self.selectedProject = load("projectData.json")
-    }
+    
     func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
         let data: Data
         
