@@ -45,62 +45,40 @@ struct ProjectManagerView: View {
                 isImporting = true
             }
             .font(.largeTitle)
+//            .contrast(10)
             .padding(50)
             .fileImporter(
-                isPresented: $isImporting,
-                allowedContentTypes: [UTType.json],
-                allowsMultipleSelection: false
-            ) { result in
-                switch result {
-                case .success(let urls):
-                    let url = urls.first!
-                    // Ensure the URL is not accessed outside of the Security Scoped Block
-                    _ = url.startAccessingSecurityScopedResource()
-                    defer { url.stopAccessingSecurityScopedResource() }
-                    loadProject(from: url)
-                case .failure(let error):
-                    // Handle the error here
-                    print(error.localizedDescription)
-                }
-            }
-        }
-    }
-    
-    
-    
-    private func handleImportResult(_ result: Result<[URL], Error>) {
-        switch result {
-        case .success(let urls):
-            guard let url = urls.first else { return }
-            loadProject(from: url)
-        case .failure(let error):
-            print(error.localizedDescription)
-        }
-    }
-    
-    private func loadProject(from url: URL) {
-         loadingState = true
-         DispatchQueue.global(qos: .userInitiated).async {
-             do {
-                 let jsonData = try Data(contentsOf: url)
-                 var loadedProject = try JSONDecoder().decode(Project.self, from: jsonData)
-                 
-                 // Load annotations if they exist
-                 loadAnnotations(for: &loadedProject)
-                 
-                 DispatchQueue.main.async {
-                     self.selectedProject = loadedProject
-                     self.loadingState = false
-                 }
-             } catch {
-                 DispatchQueue.main.async {
-                     self.errorMessage = "Failed to load project: \(error.localizedDescription)"
-                     self.loadingState = false
-                 }
-             }
-         }
-     }
-
+                                              isPresented: $isImporting,
+                                              allowedContentTypes: [UTType.json],
+                                              allowsMultipleSelection: false
+                                          ) { result in
+                                              switch result {
+                                                  case .success(let urls):
+                                                      let url = urls.first!
+                                                      // Ensure the URL is not accessed outside of the Security Scoped Block
+                                                      _ = url.startAccessingSecurityScopedResource()
+                                                      defer { url.stopAccessingSecurityScopedResource() }
+                                                      loadProject(from: url)
+                                                  case .failure(let error):
+                                                      // Handle the error here
+                                                      print(error.localizedDescription)
+                                              }
+                                          }
+                                      }
+                                  }
+                    
+                    
+                    
+                        private func handleImportResult(_ result: Result<[URL], Error>) {
+                             switch result {
+                                 case .success(let urls):
+                                     guard let url = urls.first else { return }
+                                     loadProject(from: url)
+                                 case .failure(let error):
+                                     print(error.localizedDescription)
+                             }
+                         }
+                    
     private func loadAnnotations(for project: inout Project) {
         for index in project.audioPatches.indices {
             let patchId = project.audioPatches[index].id
@@ -108,7 +86,26 @@ struct ProjectManagerView: View {
                 project.audioPatches[index].annotation = savedAnnotation
             }
         }
+        print("Annotations loaded successfully for project: \(project.projectName)")
     }
+
+    private func loadProject(from url: URL) {
+        do {
+            let jsonData = try Data(contentsOf: url)
+            var decodedProject = try JSONDecoder().decode(Project.self, from: jsonData)
+            
+            // Charger les annotations pour le projet décodé
+            loadAnnotations(for: &decodedProject)
+            
+            // Affecter le projet décodé avec les annotations chargées à la variable selectedProject
+            self.selectedProject = decodedProject
+            print("Project loaded successfully: \(decodedProject.projectName)")
+        } catch {
+            print("Error loading project: \(error)")
+        }
+    }
+
+
 
 }
 

@@ -27,12 +27,9 @@ struct InputPatchView: View {
                                     .font(.system(size: 12, weight: .bold))
                                     .foregroundColor(.white)
                                     .cornerRadius(15)
-//                                    .opacity(0.8)
                                     .onTapGesture {
                                         self.selectedPatch = patch
-//                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                                            self.isShowingDetails = true
-//                                        }
+                                        self.isShowingDetails = true
                                     }
                                 
                                 // Affichage des autres informations du patch
@@ -70,13 +67,17 @@ struct InputPatchView: View {
                 // Créez un Binding<String> pour l'annotation du patch sélectionné.
                 let annotationBinding = Binding<String>(
                     get: { self.project?.audioPatches[index].annotation ?? "" },
-                    set: { self.project?.audioPatches[index].annotation = $0 }
+                    set: { newValue in
+                        print("Annotation changed: \(newValue)")
+                        self.project?.audioPatches[index].annotation = newValue
+                        saveAnnotations() // Appel de la sauvegarde après chaque modification d'annotation
+                    }
                 )
                 
                 PatchAnnotationView(annotation: annotationBinding, onClose: {
                     self.isShowingDetails = false
-                    saveAnnotations()
-                })
+                }, saveAnnotations: saveAnnotations) // Passez la fonction saveAnnotations() ici
+
             }
             
         }
@@ -94,11 +95,14 @@ struct InputPatchView: View {
     }
     
     // Fonction de sauvegarde des annotations
+  
     func saveAnnotations() {
         if let encoded = try? JSONEncoder().encode(project) {
             UserDefaults.standard.set(encoded, forKey: "SavedProject")
+            print("Annotations saved successfully")
         }
     }
+    
     
     // Fonction pour attribuer une couleur en fonction du groupe
     func colorForGroup(_ group: String?) -> Color {
@@ -128,6 +132,7 @@ struct InputPatchView: View {
 struct PatchAnnotationView: View {
     @Binding var annotation: String
     let onClose: () -> Void
+    let saveAnnotations: () -> Void // Ajoutez ce paramètre pour passer la fonction saveAnnotations()
 
     var body: some View {
         VStack {
@@ -137,10 +142,13 @@ struct PatchAnnotationView: View {
                 .padding()
             Button("Done") {
                 onClose()
+                saveAnnotations() // Appel de la fonction saveAnnotations() lors de la fermeture de la vue
             }
-        }.padding()
+        }
+        .padding()
     }
 }
+
 
 extension Optional where Wrapped == String {
     var bound: String {
@@ -158,4 +166,3 @@ extension Binding {
         )
     }
 }
-
